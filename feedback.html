@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+
+    <!-- Link CSS  -->
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content=
+        "width=device-width, initial-scale=1.0">
+ 
+    <style>
+ 
+        /* Styling the Body element i.e. Color,
+        Font, Alignment */
+        body {
+            background-color: #8aecff;
+            font-family: Verdana;
+            text-align: center;
+        }
+ 
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #3cdfff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 40px 40px;
+            box-shadow: 5px 10px 10px rgba(1, 1, 1, 1);	
+            border-width:10px;
+           border-style:solid;
+ border-color:#287EC7;
+}
+
+        
+ 
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 30px;
+        }
+ 
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+ 
+        /* Styling form-control input,
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 2px solid #777;
+            border-radius: 3px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+margin-bottom: 15px;
+        }
+ 
+        /* Styling form-control Radio
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+ 
+        /* Styling Button */
+        button {
+            background-color: #0583D2;	
+            border: 1px solid #777;
+            border-radius: 2px;
+            font-family: inherit;
+            font-size: 21px;
+            display: block;
+            width: 100%;
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+    </style>
+ <link href = "/bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+      <script src = "/scripts/jquery.min.js"></script>
+      <script src = "/bootstrap/js/bootstrap.min.js"></script>
+</head>
+  
+<body>
+    <h1>UwUwatch<br> Help us know more about ourselves!</h1>
+  
+    <!-- Create Form -->
+    <form id="form">
+ 
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="name"
+                   placeholder="Enter your name" />
+        </div>
+  
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Email
+            </label>
+ 
+            <!-- Input Type Email-->
+            <input type="email"
+                   id="email"
+                   placeholder="Enter your email" />
+        </div>
+  
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Age
+            </label>
+ 
+            <!-- Input Type Text -->
+            <input type="text"
+                   id="age"
+                   placeholder="Enter your age" />
+        </div>
+  
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describes you?
+            </label>
+             
+            <!-- Dropdown options -->
+            <select name="role" id="role">
+                <option value="student">Veteran weeb</option>
+                <option value="intern">Moderate anime addict</option>
+                <option value="professional">  Virgin (in life and anime) </option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+  	<div class="form-control">
+            <label for="rating" id="label-name">
+              How much do you like us? 
+            </label>
+	   <!-- Input Type Text -->
+            <input type="text"
+                   id="rating"
+                   placeholder="1-10 scale" />
+        </div>
+        <div class="form-control">
+            <label>
+                Would you recommend our 'UwUwatch' web?
+            </label>
+ 
+            <!-- Input Type Radio Button -->
+            <label for="recommed-1">
+                <input type="radio"
+                       id="recommed-1"
+                       name="recommed">Yes</input>
+            </label>
+            <label for="recommed-2">
+                <input type="radio"
+                       id="recommed-2"
+                       name="recommed">No</input>
+            </label>
+            <label for="recommed-3">
+                <input type="radio"
+                       id="recommed-3"
+                       name="recommed">Maybe</input>
+            </label>
+        </div>
+  
+        <div class="container">
+            <label>Genres that you were satisfied from our suggestions:
+                <small>(Check all that apply)  <br></small>
+            </label>
+            <!-- Input Type Checkbox -->
+	<br>
+            <label for="inp-1">
+                <input type="checkbox"
+                       name="inp"> Shounen &ensp;</input></label>
+            <label for="inp-2">
+                <input type="checkbox"
+                       name="inp">Seinen &ensp;</input></label>
+            <label for="inp-3">
+                <input type="checkbox"
+                       name="inp">Slice of  life &ensp;</input></label>
+            <label for="inp-4">
+                <input type="checkbox"
+                       name="inp">Horrour &ensp;</input></label>
+            <label for="inp-5">
+                <input type="checkbox"
+                       name="inp">Hanime &ensp; <br></input></label>
+            <label for="inp-6">
+                <input type="checkbox"
+                       name="inp">Pyschology &ensp;</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Dark &ensp;</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Romance  &ensp;</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Isekai  &ensp;</input></label>
+            <label for="inp-7">
+                <input type="checkbox"
+                       name="inp">Jousei  &ensp;</input></label>
+        </div>
+        <div class="form-control">
+<br>	
+            <label for="comment">
+                Any comments or suggestions
+            </label>
+ 
+            <!-- multi-line text input control -->
+            <textarea name="comment" id="comment"
+                placeholder="Enter your comment here">
+            </textarea>
+        </div>
+  
+        <div class="title-link-genre ">
+            <a href="# ">Submit</a>
+        </button>
+        </div>
+    </form>
+</body>
+  
+</html>
